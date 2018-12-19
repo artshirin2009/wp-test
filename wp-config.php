@@ -11,7 +11,7 @@
  * * Настройки MySQL
  * * Секретные ключи
  * * Префикс таблиц базы данных
- * * ABSPATH
+ * * ABSPATH fdv
  *
  * @link https://codex.wordpress.org/Editing_wp-config.php
  *
