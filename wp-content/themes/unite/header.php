@@ -20,6 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="hfeed site">
 	<div class="container header-area">
 		<?php do_action( 'before' ); ?>
