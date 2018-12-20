@@ -20,6 +20,8 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', 'E:\openserver\OSPanel\domains\wp-test\wp-content\plugins\wp-super-cache/' );
 define('DB_NAME', 'wp-test');
 
 /** Имя пользователя MySQL */
