@@ -3,3 +3,7 @@
  * Template: unite
  */
 @import url('../unite/style.css');
+
+section.card-text {
+    min-height: 170px;
+}

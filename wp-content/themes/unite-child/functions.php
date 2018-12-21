@@ -55,3 +55,24 @@
 	);
     add_action( 'init', 'art_create_post_type' );
 
+    
+
+    function last_five_posts(){
+       
+            global $post;
+            $args = array( 'posts_per_page' => 5, 'post_type'  => 'movies', 'orderby' => 'date' );
+            $postslist = get_posts( $args );
+            foreach ( $postslist as $post ) :
+            setup_postdata( $post ); ?> 
+                <div>
+                    
+                    <?php the_title(); ?>   
+                    <?php the_excerpt(); ?>
+                </div>
+            <?php
+            endforeach; 
+            wp_reset_postdata();
+        }
+    
+    
+    add_shortcode( 'recentposts', 'last_five_posts' );
